@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let restOfURL = window.location.href.substring(baseURL.length)
     console.log(`restOfURL: ${restOfURL}`)
     if (baseURL == "https://www.reddit.com"){
+        window.stop()
         window.location.href = "http://old.reddit.com" + restOfURL
     }
 });
